@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentera Pancasila - Jembatan Generasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-orange-500">
+                Lentera Pancasila
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#beranda" class="text-gray-600 hover:text-orange-500 transition duration-300">Beranda</a>
+                <a href="#tentang" class="text-gray-600 hover:text-orange-500 transition duration-300">Tentang Kami</a>
+                <a href="#program" class="text-gray-600 hover:text-orange-500 transition duration-300">Program</a>
+                <a href="#gabung" class="text-gray-600 hover:text-orange-500 transition duration-300">Cara Gabung</a>
+            </div>
+            <a href="#" class="hidden md:block bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition duration-300">
+                Mulai Berkontribusi
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#beranda" class="block py-2 text-gray-600 hover:text-orange-500">Beranda</a>
+            <a href="#tentang" class="block py-2 text-gray-600 hover:text-orange-500">Tentang Kami</a>
+            <a href="#program" class="block py-2 text-gray-600 hover:text-orange-500">Program</a>
+            <a href="#gabung" class="block py-2 text-gray-600 hover:text-orange-500">Cara Gabung</a>
+            <a href="#" class="block mt-2 bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg text-center">
+                Mulai Berkontribusi
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="bg-white pt-20 pb-16">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Menghubungkan <span class="text-orange-500">Generasi,</span><br>Menguatkan Nilai Pancasila.</h1>
+                    <p class="mt-6 text-lg text-gray-600">Platform gotong royong digital yang mempertemukan semangat generasi muda dengan kearifan para lansia untuk membangun komunitas yang lebih peduli dan berdaya.</p>
+                    <div class="mt-8">
+                        <a href="#" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-orange-600 transition duration-300 shadow-lg">
+                            Gabung Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/FF9843/FFFFFF?text=Ilustrasi+Kolaborasi\nGenerasi" alt="Ilustrasi kolaborasi generasi muda dan lansia" class="rounded-lg shadow-2xl mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="tentang" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Tentang Lentera Pancasila</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    Kami percaya setiap generasi memiliki kekuatan unik. Lentera Pancasila hadir untuk menjadi wadah di mana kekuatan tersebut bersatu. Kami memfasilitasi pertukaran ilmu, menginisiasi aksi sosial, dan melestarikan kearifan lokal, semua dalam semangat gotong royong dan kemanusiaan.
+                </p>
+            </div>
+        </section>
+
+        <!-- Program Unggulan Section -->
+        <section id="program" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Program Unggulan Kami</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1: Tukar Ilmu -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Tukar Ilmu</h3>
+                        <p class="text-gray-600">Generasi muda berbagi skill digital, generasi senior berbagi kearifan dan pengalaman hidup. Belajar bersama, tumbuh bersama.</p>
+                    </div>
+                    <!-- Card 2: Aksi Bareng -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-green-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Aksi Bareng</h3>
+                        <p class="text-gray-600">Dari kerja bakti lingkungan hingga acara komunitas. Wujudkan ide-ide positif menjadi aksi nyata yang bermanfaat untuk semua.</p>
+                        
+                        <!-- Perubahan di sini: Mengganti daftar statis dengan tombol -->
+                        <div class="mt-4 text-center">
+                             <button id="aksi-terdekat-btn" class="bg-green-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                🏃 Lihat Aksi Terdekat
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 3: Kisah Lokal -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Kisah Lokal</h3>
+                        <p class="text-gray-600">Abadikan cerita dan sejarah dari para sesepuh. Menjaga warisan kearifan lokal agar tidak lekang oleh waktu.</p>
+                        <!-- FITUR GEMINI BARU: Tombol Bantuan Wawancara -->
+                        <button id="kisah-helper-btn" class="mt-4 bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 text-sm">
+                            ✨ Dapatkan Ide Pertanyaan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FITUR GEMINI BARU: Perencana Aksi Sosial -->
+        <section id="gemini-planner" class="py-20">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h2 class="text-3xl font-bold mb-4">✨ Rencanakan Aksi Sosial Anda</h2>
+                <p class="text-gray-600 mb-8">Punya ide untuk "Aksi Bareng" tapi bingung mulai dari mana? Biarkan AI membantu Anda membuat rencana sederhana!</p>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <label for="aksi-input" class="block text-left font-semibold mb-2 text-gray-700">Masukkan Ide Aksi Anda:</label>
+                    <input type="text" id="aksi-input" placeholder="Contoh: Kerja bakti membersihkan taman" class="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    
+                    <button id="generate-plan-btn" class="w-full bg-green-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-600 transition duration-300 shadow-lg">
+                        Buat Rencana Sederhana
+                    </button>
+                    
+                    <!-- Indikator Loading -->
+                    <div id="loading-planner" class="hidden mt-6 text-gray-600">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-green-500 mx-auto"></div>
+                        <p class="mt-2">Sedang membuat rencana...</p>
+                    </div>
+                    
+                    <!-- Output Rencana -->
+                    <div id="plan-output" class="hidden mt-6 p-6 bg-gray-50 rounded-lg text-left whitespace-pre-wrap font-mono">
+                        <!-- Hasil dari Gemini akan ditampilkan di sini -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cara Gabung Section -->
+        <section id="gabung" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Hanya 3 Langkah Mudah untuk Bergabung</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-200 text-orange-500 font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">1</div>
+                        <h3 class="text-xl font-semibold mb-2">Daftar</h3>
+                        <p class="text-gray-600">Isi profil singkat Anda, baik sebagai Mentor Muda atau Mentor Senior.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-200 text-orange-500 font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">2</div>
+                        <h3 class="text-xl font-semibold mb-2">Temukan</h3>
+                        <p class="text-gray-600">Jelajahi program dan kegiatan yang tersedia di komunitas sekitar Anda.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-200 text-orange-500 font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center mb-4">3</div>
+                        <h3 class="text-xl font-semibold mb-2">Berkolaborasi</h3>
+                        <p class="text-gray-600">Hubungi, bertemu, dan mulailah berkolaborasi untuk kebaikan bersama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal untuk Ide Pertanyaan Kisah Lokal -->
+    <div id="kisah-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[60] flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="close-kisah-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4 text-blue-500">✨ Ide Pertanyaan Wawancara</h3>
+            
+            <!-- Indikator Loading Modal -->
+            <div id="loading-kisah" class="text-center text-gray-600 py-8">
+                 <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"></div>
+                 <p class="mt-2">Sedang membuat pertanyaan...</p>
+            </div>
+
+            <!-- Output Pertanyaan Modal -->
+            <div id="kisah-output" class="hidden text-gray-700 space-y-3">
+                <!-- Pertanyaan dari Gemini akan ditampilkan di sini -->
+            </div>
+        </div>
+    </div>
+
+    <!-- BARU: Modal untuk Aksi Terdekat -->
+    <div id="aksi-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[60] flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="close-aksi-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4 text-green-500">🏃 Aksi Terdekat di Komunitas</h3>
+            
+            <!-- Konten Daftar Aksi -->
+            <div id="aksi-output" class="text-gray-700 space-y-4 max-h-[60vh] overflow-y-auto">
+                <!-- Aksi 1 -->
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="font-bold text-lg text-green-800">Kerja Bakti Taman RW 05</h4>
+                    <p class="text-sm text-gray-600 mt-1">Lokasi: Taman Utama RW 05</p>
+                    <p class="text-sm text-gray-600">Waktu: Sabtu Ini, 07:00 WIB</p>
+                    <button class="mt-3 text-sm bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition duration-300">
+                        Saya Tertarik
+                    </button>
+                </div>
+                <!-- Aksi 2 -->
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="font-bold text-lg text-green-800">Ngajar Ngaji Digital untuk Lansia</h4>
+                    <p class="text-sm text-gray-600 mt-1">Lokasi: Masjid Al-Ikhlas</s>
+                    <p class="text-sm text-gray-600">Waktu: Minggu Depan, 16:00 WIB</p>
+                    <button class="mt-3 text-sm bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition duration-300">
+                        Saya Tertarik
+                    </button>
+                </div>
+                <!-- Aksi 3 -->
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="font-bold text-lg text-green-800">Donasi Buku Cerita untuk PAUD</h4>
+                    <p class="text-sm text-gray-600 mt-1">Lokasi: PAUD Harapan Bangsa</p>
+                    <p class="text-sm text-gray-600">Waktu: s/d 31 Oktober (Jam Kerja)</p>
+                    <button class="mt-3 text-sm bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition duration-300">
+                        Saya Tertarik
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold text-orange-400 mb-2">Lentera Pancasila</p>
+            <p class="mb-6">Membangun Jembatan, Menguatkan Bangsa.</p>
+            <p class="text-sm text-gray-400">&copy; 2025 Lentera Pancasila. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Integrasi Gemini API ---
+
+        /**
+         * Fungsi pemanggil Gemini API dengan exponential backoff.
+         * @param {string} systemPrompt - Instruksi sistem untuk AI.
+         * @param {string} userQuery - Prompt/pertanyaan dari pengguna.
+         * @param {number} retries - Jumlah percobaan ulang (default 3).
+         * @param {number} delay - Waktu tunggu antar percobaan (default 1000ms).
+         * @returns {Promise<string>} Teks respons dari AI.
+         */
+        async function callGemini(systemPrompt, userQuery, retries = 3, delay = 1000) {
+            const apiKey = ""; // API Key akan disediakan oleh environment
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+                // Tidak ada 'tools' (Google Search) untuk tugas kreatif ini
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    // Coba lagi jika terjadi throttling (429)
+                    if (response.status === 429 && retries > 0) {
+                        // Tidak log error backoff
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        return callGemini(systemPrompt, userQuery, retries - 1, delay * 2);
+                    }
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    return candidate.content.parts[0].text;
+                } else {
+                    throw new Error("Respon API tidak valid atau tidak berisi teks.");
+                }
+            } catch (error) {
+                console.error("Error memanggil Gemini API:", error);
+                // Hanya tampilkan pesan error yang relevan ke pengguna
+                if (error.message.includes("HTTP error! status: 429")) {
+                    return "Maaf, server sedang sibuk. Silakan coba lagi nanti.";
+                }
+                return `Maaf, terjadi kesalahan saat memproses permintaan Anda.`;
+            }
+        }
+
+        // --- Fitur 1: Perencana Aksi Bareng ---
+        const generatePlanBtn = document.getElementById('generate-plan-btn');
+        const aksiInput = document.getElementById('aksi-input');
+        const loadingPlanner = document.getElementById('loading-planner');
+        const planOutput = document.getElementById('plan-output');
+
+        if (generatePlanBtn) {
+            generatePlanBtn.addEventListener('click', async () => {
+                const idea = aksiInput.value.trim();
+                if (!idea) {
+                    planOutput.innerHTML = '<p class="text-red-500">Silakan masukkan ide aksi Anda terlebih dahulu.</p>';
+                    planOutput.classList.remove('hidden');
+                    return;
+                }
+
+                loadingPlanner.classList.remove('hidden');
+                planOutput.classList.add('hidden');
+                planOutput.innerHTML = '';
+
+                const systemPrompt = "Anda adalah seorang perencana kegiatan komunitas yang praktis. Berikan 3-5 langkah aksi yang sangat sederhana, singkat, dan mudah dilakukan untuk mewujudkan sebuah ide aksi sosial. Gunakan format daftar bernomor (1., 2., 3.). Pastikan jawaban Anda singkat dan langsung ke intinya.";
+                const userQuery = `Buatkan rencana langkah-demi-langkah untuk ide aksi ini: "${idea}"`;
+
+                const resultText = await callGemini(systemPrompt, userQuery);
+
+                loadingPlanner.classList.add('hidden');
+                planOutput.innerHTML = resultText.replace(/\n/g, '<br>'); // Ganti newline dengan <br> agar formatnya rapi
+                planOutput.classList.remove('hidden');
+            });
+        }
+
+        // --- Fitur 2: Ide Pertanyaan Kisah Lokal (Modal) ---
+        const kisahHelperBtn = document.getElementById('kisah-helper-btn');
+        const kisahModal = document.getElementById('kisah-modal');
+        const closeKisahModalBtn = document.getElementById('close-kisah-modal');
+        const loadingKisah = document.getElementById('loading-kisah');
+        const kisahOutput = document.getElementById('kisah-output');
+
+        // --- BARU: Fitur 3: Modal Aksi Terdekat ---
+        const aksiTerdekatBtn = document.getElementById('aksi-terdekat-btn');
+        const aksiModal = document.getElementById('aksi-modal');
+        const closeAksiModalBtn = document.getElementById('close-aksi-modal');
+
+
+        if (generatePlanBtn) {
+            generatePlanBtn.addEventListener('click', async () => {
+                const userQuery = "Buatkan 5 pertanyaan wawancara untuk 'Kisah Lokal' untuk ditanyakan kepada lansia.";
+                
+                const resultText = await callGemini(systemPrompt, userQuery);
+                
+                // Format output sebagai list yang lebih rapi
+                const questions = resultText.split('\n').filter(q => q.trim().length > 0);
+                const formattedHtml = questions.map(q => `<p class="p-3 bg-gray-100 rounded-md shadow-sm">${q}</p>`).join('');
+
+                loadingKisah.classList.add('hidden');
+                kisahOutput.innerHTML = formattedHtml;
+                kisahOutput.classList.remove('hidden');
+            });
+        }
+
+        if (closeKisahModalBtn) {
+            closeKisahModalBtn.addEventListener('click', () => {
+                kisahModal.classList.add('hidden');
+            });
+        }
+
+        // Menutup modal jika klik di luar area konten
+        if (kisahModal) {
+            kisahModal.addEventListener('click', (e) => {
+                if (e.target === kisahModal) {
+                    kisahModal.classList.add('hidden');
+                }
+            });
+        }
+
+        // --- BARU: Logika Fitur 3: Modal Aksi Terdekat ---
+        if (aksiTerdekatBtn) {
+            aksiTerdekatBtn.addEventListener('click', () => {
+                aksiModal.classList.remove('hidden');
+                // Tidak ada panggilan API, hanya menampilkan modal
+            });
+        }
+
+        if (closeAksiModalBtn) {
+            closeAksiModalBtn.addEventListener('click', () => {
+                aksiModal.classList.add('hidden');
+            });
+        }
+
+        // Menutup modal jika klik di luar area konten
+        if (aksiModal) {
+            aksiModal.addEventListener('click', (e) => {
+                if (e.target === aksiModal) {
+                    aksiModal.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
